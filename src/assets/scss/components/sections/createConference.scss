@@ -1,0 +1,56 @@
+.s-create-conference {
+  &__wrapper {
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  &__title {
+    padding-bottom: 30px;
+    border-bottom: 1px solid $border;
+  }
+  .alert {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border-radius: unset;
+    margin-top: 5px;
+  }
+  .ql-editor {
+    min-height: 200px;
+    border: 2px solid $border;
+    transition: all 300ms;
+    &:focus {
+      border: 2px solid $primary;
+    }
+  }
+  .ql-toolbar {
+    border: 2px solid $border !important;
+    border-bottom: none !important;
+  }
+  .ql-container.ql-snow {
+    border: none;
+  }
+  .form-control {
+    border: none;
+    border-bottom: 2px solid $border;
+    border-radius: 0;
+    @include media-breakpoint-down(md) {
+      font-size: 13px;
+    }
+    &:focus {
+      box-shadow: none;
+      border-bottom: 2px solid $primary;
+    }
+  }
+  button {
+    &:first-child {
+      margin-right: 10px;
+      @include media-breakpoint-down(sm) {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

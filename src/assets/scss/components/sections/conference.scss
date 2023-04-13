@@ -1,0 +1,148 @@
+.s-conference {
+  &__wrapper {
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+  }
+  &__actions {
+    button {
+      @include media-breakpoint-down(md) {
+        font-size: 13px;
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+      }
+      @include media-breakpoint-up(md) {
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  &__section {
+    border-bottom: 1px solid $border;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+  }
+  &__department {
+    text-align: center;
+    .name {
+      font-size: 35px;
+      font-weight: 700;
+      display: block;
+      @include media-breakpoint-down(md) {
+        font-size: 25px;
+      }
+    }
+    .image {
+      width: 800px;
+    }
+    .organisator {
+      display: block;
+      font-size: 25px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      @include media-breakpoint-down(md) {
+        font-size: 15px;
+      }
+    }
+    .pre-title {
+      display: block;
+      font-size: 25px;
+      font-weight: 700;
+      @include media-breakpoint-down(md) {
+        font-size: 15px;
+      }
+    }
+  }
+  &__title {
+    font-weight: 700;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 35px;
+    @include media-breakpoint-down(md) {
+      font-size: 25px;
+    }
+  }
+  &__logo {
+    width: 400px;
+    margin: 0 auto;
+    display: block;
+  }
+  &__date {
+    text-align: center;
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+    padding-top: 20px;
+    @include media-breakpoint-down(md) {
+      font-size: 15px;
+    }
+  }
+  &__university {
+    text-align: center;
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+    padding-top: 20px;
+    @include media-breakpoint-down(md) {
+      font-size: 15px;
+    }
+  }
+  &__city {
+    text-align: center;
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+    @include media-breakpoint-down(md) {
+      font-size: 15px;
+    }
+  }
+  &__cooperations {
+    margin-top: 30px;
+    font-weight: 700;
+    text-align: center;
+    .headline {
+      display: block;
+      font-size: 20px;
+      @include media-breakpoint-down(md) {
+        font-size: 13px;
+      }
+    }
+    .items {
+      margin-top: 30px;
+      list-style: none;
+      font-size: 25px;
+      padding-left: 0;
+      @include media-breakpoint-down(md) {
+        font-size: 15px;
+      }
+      &__item {
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  &__content.ql-editor {
+    h2, h3, h4 {
+      padding: 10px 0;
+    }
+  }
+  .back-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: $colorPrimary;
+    &:hover {
+      text-decoration: underline;
+    }
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      img {
+        transform: rotate(180deg);
+        margin-right: 4px;
+      }
+    }
+  }
+}

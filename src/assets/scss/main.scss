@@ -1,0 +1,24 @@
+//bootstrap
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+//global
+@import 'global/fonts.scss';
+@import 'global/reset.scss';
+@import 'global/variables.scss';
+@import 'global/modal.scss';
+@import 'global/buttons.scss';
+@import 'global/loader.scss';
+@import 'global/flashAlert.scss';
+//layout
+@import 'layout/header.scss';
+//sections
+@import 'components/sections/login-form.scss';
+@import 'components/sections/welcome.scss';
+@import 'components/sections/home.scss';
+@import 'components/sections/conferences.scss';
+@import 'components/sections/conference.scss';
+@import 'components/sections/forgottenPassword.scss';
+@import 'components/sections/createConference.scss';
+@import 'components/sections/updateConference.scss';
+@import 'components/sections/createReview.scss';
+@import 'components/sections/reviews.scss';
+@import 'components/sections/statistics.scss';

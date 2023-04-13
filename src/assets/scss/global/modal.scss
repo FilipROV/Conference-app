@@ -1,0 +1,101 @@
+.g-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  &__window {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    overflow-y: auto;
+    max-height: 700px;
+    max-width: 100%;
+    width: 800px;
+  }
+  &__table {
+    th {
+      font-weight: 700;
+      border-bottom: 2px solid $primary;
+      padding: 10px 15px;
+      vertical-align: middle;
+      text-align: center;
+    }
+    td {
+      border-bottom: 2px solid $primary;
+      padding: 10px 15px;
+      vertical-align: middle;
+      text-align: center;
+    }
+  }
+  &__title {
+    font-size: 25px;
+    display: block;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid $border;
+    @include media-breakpoint-down(md) {
+      font-size: 20px;
+    }
+  }
+  &__content {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 17px;
+    .alert {
+      width: 100%;
+      padding: 5px;
+      border-radius: unset;
+      margin-top: 5px;
+    }
+    p {
+      margin-bottom: 15px;
+    }
+    span {
+      display: block;
+    }
+    .content-item {
+      border-bottom: 1px solid $primary;
+      ul {
+        padding: 0;
+        list-style: none;
+        margin-bottom: 15px;
+      }
+    }
+    .ql-editor {
+      min-height: 200px;
+      border: 2px solid $primary;
+      border-top: none;
+    }
+    .ql-toolbar {
+      border: 2px solid $primary !important;
+      border-bottom: 1px solid $border !important;
+    }
+    .ql-container.ql-snow {
+      border: none;
+    }
+  }
+  &__buttons {
+    display: flex;
+    justify-content: flex-end;
+    button {
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+  &.v-enter-active,
+  &.v-leave-active {
+    transition: all 0.3s ease;
+  }
+  &.v-enter-from,
+  &.v-leave-to {
+    opacity: 0;
+  }
+}

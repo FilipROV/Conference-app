@@ -1,0 +1,36 @@
+.s-reviews {
+  &__title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 35px;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 30px;
+    }
+  }
+  &__select {
+    padding: 5px 10px;
+    border: 1px solid $primary;
+    cursor: pointer;
+    border-radius: 5px;
+    max-width: 200px;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__card {
+    background: white;
+    border-radius: 20px;
+    border: 1px solid $border;
+    padding: 20px;
+    ul {
+      padding: 0;
+      list-style: none;
+    }
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      color: #C0C0C0
+    }
+  }
+}

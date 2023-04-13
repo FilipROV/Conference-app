@@ -1,0 +1,12 @@
+.form-control {
+  border: none;
+  border-bottom: 2px solid $primary;
+  border-radius: 0;
+  &:focus {
+    box-shadow: none;
+  }
+}
+textarea.form-control {
+  border: 2px solid $primary;
+  height: 200px;
+}
